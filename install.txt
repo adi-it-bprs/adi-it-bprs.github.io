@@ -1,13 +1,14 @@
 #bin/bash
 pkg install git php -y
 git clone https://github.com/adi-it-bprs/mikhmonv3.git
-
+rm -rf mikhmonv3
+rm ~/start-mikhmon
+rm ~/update-mikhmon
+rm ~/remove-mikhmon
 cp ~/mikhmonv3/start-mikhmon ~/
 cp ~/mikhmonv3/update-mikhmon ~/
 cp ~/mikhmonv3/remove-mikhmon ~/
-
 chmod +x start-mikhmon
 chmod +x update-mikhmon
 chmod +x remove-mikhmon
-
 ./start-mikhmon
